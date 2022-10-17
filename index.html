@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="calc-make-h1">BUDGET APP</h1>
+    <div class="calcl-main">
+        <div class="calc-make">
+            <div class="empty-value-1">Value Cannot Be Empty Or Negative</div>
+            <div class="budget-block">
+                <form>
+                    <label for="budget" class="label-calc">Please Enter Your Budget</label><br>
+                    <input type="number" class="input-calc green" id="input-budget"><br>
+                    <button class="budget-calc">Calculate</button>
+                </form>
+            </div>
+
+            
+            <div class="expense-block">
+                <div class="empty-value-2">Value Cannot Be Empty Or Negative</div>
+                <form>
+                    <label for="expense" class="label-calc">Please Enter Your Expense</label><br>
+                    <input type="text" class="input-calc red" id="input-expense-title"><br>
+                    <label for="expense" class="label-calc">Please Enter Expense Amount</label><br>
+                    <input type="number" class="input-calc red" id="input-expense-amount"><br>
+                    <button class="add-expense">Add expense</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="calc-show">
+            <div class="calc-show-row-1">
+                <div class="show-item">
+                    <h2 class="show-h2">BUDGET</h2>
+                    <i class="fa fa-money fa-4x fa-1" aria-hidden="true"></i>
+                    <div class="show-money green-money" id="budget-money">$ 0</div>
+                </div>
+                <div class="show-item">
+                    <h2 class="show-h2">EXPENSES</h2>
+                    <i class="fa fa-credit-card fa-4x fa-1" aria-hidden="true"></i>
+                    <div class="show-money red-money" id="expenses-money">$ 0</div>
+                </div>
+                <div class="show-item">
+                    <h2 class="show-h2">BALANCE</h2>
+                    <i class="fa fa-usd fa-4x fa-1" aria-hidden="true"></i>
+                    <div class="show-money" id="balance-money">$ 0</div>
+                </div>
+            </div>
+            <div class="calc-show-row-2">
+                <div class="show-expense-header">Expense Title</div>
+                <div class="show-expense-header">Expense Value</div>
+                <div class="show-expense-header">Delete/Edit</div>
+                <div class="show-expense-content-main">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
